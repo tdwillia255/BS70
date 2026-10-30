@@ -17,16 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text=" " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf9-GO-kr4">
-                                <rect key="frame" x="265" y="315" width="503" height="786"/>
+                                <rect key="frame" x="45" y="78" width="959" height="1095"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1095" id="uG0-Vm-cNn"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCb-cH-Wme">
+                                <rect key="frame" x="180" y="1235" width="216" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Measure your blind spot?">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.1867776142" blue="0.074087981959999993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="measureBS:" destination="VvG-jE-T1Y" eventType="touchUpInside" id="YCV-MR-Jki"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6j-iI-sXm">
-                                <rect key="frame" x="709" y="1181" width="167" height="135"/>
+                                <rect key="frame" x="709" y="1235" width="167" height="34.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="pf9-tC-0oZ"/>
+                                    <constraint firstAttribute="width" constant="167" id="jOk-Qn-qVZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Blind Spot Demo"/>
@@ -34,34 +49,23 @@
                                     <action selector="BSdemo:" destination="VvG-jE-T1Y" eventType="touchUpInside" id="431-gh-rqE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCb-cH-Wme">
-                                <rect key="frame" x="130" y="1231" width="216" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Measure your blind spot?">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="1" green="0.1867776142" blue="0.074087981959999993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HY4-Nx-nCV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eCb-cH-Wme" firstAttribute="baseline" secondItem="G6j-iI-sXm" secondAttribute="baseline" id="8VG-L6-89X"/>
-                            <constraint firstItem="G6j-iI-sXm" firstAttribute="leading" secondItem="HY4-Nx-nCV" secondAttribute="leading" constant="709" id="9aG-4k-OnS"/>
-                            <constraint firstItem="eCb-cH-Wme" firstAttribute="leading" secondItem="HY4-Nx-nCV" secondAttribute="leading" constant="130" id="OC6-Ar-3I9"/>
-                            <constraint firstItem="Tf9-GO-kr4" firstAttribute="leading" secondItem="HY4-Nx-nCV" secondAttribute="leading" constant="265" id="Ug7-ZG-Zep"/>
-                            <constraint firstItem="G6j-iI-sXm" firstAttribute="top" secondItem="Tf9-GO-kr4" secondAttribute="bottom" constant="80" id="WIU-ed-E46"/>
-                            <constraint firstItem="G6j-iI-sXm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eCb-cH-Wme" secondAttribute="trailing" constant="8" symbolic="YES" id="bIA-kb-ylL"/>
-                            <constraint firstItem="HY4-Nx-nCV" firstAttribute="trailing" secondItem="G6j-iI-sXm" secondAttribute="trailing" constant="148" id="ew1-Bf-2cq"/>
-                            <constraint firstItem="Tf9-GO-kr4" firstAttribute="top" secondItem="HY4-Nx-nCV" secondAttribute="top" constant="237" id="gUG-qi-zzz"/>
-                            <constraint firstItem="G6j-iI-sXm" firstAttribute="bottom" secondItem="HY4-Nx-nCV" secondAttribute="bottom" id="oHo-zM-aQG"/>
-                            <constraint firstItem="HY4-Nx-nCV" firstAttribute="trailing" secondItem="Tf9-GO-kr4" secondAttribute="trailing" constant="256" id="qQw-kY-9rM"/>
+                            <constraint firstItem="Tf9-GO-kr4" firstAttribute="trailing" secondItem="ZtB-5U-j5R" secondAttribute="trailingMargin" id="BRZ-3q-uDt"/>
+                            <constraint firstItem="eCb-cH-Wme" firstAttribute="baseline" secondItem="G6j-iI-sXm" secondAttribute="baseline" id="GNF-cW-XVF"/>
+                            <constraint firstItem="Tf9-GO-kr4" firstAttribute="leading" secondItem="HY4-Nx-nCV" secondAttribute="leading" constant="45" id="KEs-cd-1NJ"/>
+                            <constraint firstItem="G6j-iI-sXm" firstAttribute="top" secondItem="Tf9-GO-kr4" secondAttribute="bottom" constant="62" id="haa-YJ-GjC"/>
+                            <constraint firstItem="HY4-Nx-nCV" firstAttribute="trailing" secondItem="G6j-iI-sXm" secondAttribute="trailing" constant="148" id="hp9-ex-Sng"/>
+                            <constraint firstItem="Tf9-GO-kr4" firstAttribute="top" secondItem="HY4-Nx-nCV" secondAttribute="top" id="mvn-zd-NjO"/>
+                            <constraint firstItem="eCb-cH-Wme" firstAttribute="leading" secondItem="HY4-Nx-nCV" secondAttribute="leading" constant="180" id="prJ-A3-VGF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D4E-aD-bYS"/>
                     <connections>
-                        <outlet property="BSdemo" destination="G6j-iI-sXm" id="XY8-C0-cHq"/>
+                        <outlet property="BSdemo" destination="G6j-iI-sXm" id="s9e-qH-vb1"/>
+                        <outlet property="measureBS" destination="eCb-cH-Wme" id="ejm-g4-bJL"/>
                         <outlet property="text" destination="Tf9-GO-kr4" id="jO0-8a-SCo"/>
                     </connections>
                 </viewController>
@@ -132,6 +136,127 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Bd-Ny-lcH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2748.046875" y="-1501.3177159590043"/>
+        </scene>
+        <!--Blind Spot View Controller-->
+        <scene sceneID="xpf-ON-xPZ">
+            <objects>
+                <viewController storyboardIdentifier="BSViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dpy-wF-lnF" customClass="BlindSpotViewController" customModule="BS66" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0NB-pU-Jqq">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cT-ff-SK0">
+                                <rect key="frame" x="800" y="1250" width="175" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="dpy-wF-lnF" eventType="touchUpInside" id="HIe-Mf-u2o"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="count" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sGJ-Eo-Sva">
+                                <rect key="frame" x="809" y="1200" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.92605084299999996" green="1" blue="0.073681185199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5r-o1-laq">
+                                <rect key="frame" x="597" y="1215" width="175" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Result"/>
+                                <connections>
+                                    <action selector="result:" destination="dpy-wF-lnF" eventType="touchUpInside" id="WwQ-xU-Vyt"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="spot" translatesAutoresizingMaskIntoConstraints="NO" id="YhI-AH-gZH">
+                                <rect key="frame" x="158" y="233" width="598" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PO7-CL-WsJ">
+                                <rect key="frame" x="792" y="515" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="X">
+                                    <color key="baseForegroundColor" red="1" green="0.9941839415" blue="0.1469471654" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="seen:" destination="dpy-wF-lnF" eventType="touchUpInside" id="eRO-IP-ObP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eiL-Cf-RUm"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="count" destination="sGJ-Eo-Sva" id="3gH-M9-ifq"/>
+                        <outlet property="result" destination="s5r-o1-laq" id="axZ-gq-8i5"/>
+                        <outlet property="seen" destination="PO7-CL-WsJ" id="LRi-GS-4jK"/>
+                        <outlet property="spot" destination="YhI-AH-gZH" id="wuS-F4-d3e"/>
+                        <outlet property="start" destination="3cT-ff-SK0" id="YNF-Do-L8d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWv-wI-3IN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980.8139534883721" y="724.70930232558135"/>
+        </scene>
+        <!--test-->
+        <scene sceneID="K3B-0e-L80">
+            <objects>
+                <viewController storyboardIdentifier="test" title="test" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Too-p8-6hu" customClass="TestViewController" customModule="BS70" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vlt-iA-IIE">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vic-SN-f4Q">
+                                <rect key="frame" x="360" y="1265.5" width="61.5" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="Too-p8-6hu" eventType="touchUpInside" id="bNN-pW-3XY"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QCm-bU-AHx">
+                                <rect key="frame" x="152" y="179" width="759" height="813"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byh-O1-OfL">
+                                <rect key="frame" x="205" y="1265.5" width="114" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Instructions"/>
+                                <connections>
+                                    <action selector="instructions:" destination="Too-p8-6hu" eventType="touchUpInside" id="MBo-Sy-nzT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VfU-68-fvz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VfU-68-fvz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vic-SN-f4Q" secondAttribute="trailing" symbolic="YES" id="98Q-l1-Uee"/>
+                            <constraint firstItem="byh-O1-OfL" firstAttribute="leading" secondItem="VfU-68-fvz" secondAttribute="leading" constant="205" id="Gw5-4k-wsO"/>
+                            <constraint firstItem="VfU-68-fvz" firstAttribute="bottom" secondItem="byh-O1-OfL" secondAttribute="bottom" constant="16" id="Ref-Y8-iOV"/>
+                            <constraint firstItem="vic-SN-f4Q" firstAttribute="leading" secondItem="byh-O1-OfL" secondAttribute="trailing" constant="41" id="d6C-wM-DeM"/>
+                            <constraint firstItem="byh-O1-OfL" firstAttribute="baseline" secondItem="vic-SN-f4Q" secondAttribute="baseline" id="rnY-oE-Hdx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tIR-jw-kCj"/>
+                    <connections>
+                        <outlet property="BSInstructions" destination="QCm-bU-AHx" id="sGA-zc-jRE"/>
+                        <outlet property="instructions" destination="byh-O1-OfL" id="0ba-Yz-I9W"/>
+                        <outlet property="start" destination="vic-SN-f4Q" id="gr2-nc-fZw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRo-5Z-7ot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248.2558139534883" y="775.72674418604652"/>
         </scene>
     </scenes>
     <resources>

@@ -11,6 +11,9 @@ class HistoryViewController: UIViewController {
     var selectedText: String?
     @IBOutlet weak var text: UITextView!
       
+    @IBOutlet weak var measureBS: UIButton!
+     
+    
     @IBOutlet weak var BSdemo: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +43,10 @@ class HistoryViewController: UIViewController {
 }
        
        
-   
+    @IBAction func measureBS(_ sender: Any) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier:"test") as? TestViewController { navigationController?.pushViewController(vc, animated: false)}
+    }
+    
     }
     
     
