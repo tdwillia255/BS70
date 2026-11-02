@@ -93,7 +93,7 @@
                                     <constraint firstAttribute="height" constant="135" id="hOk-d6-pcY"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ChooseBS"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choose demo"/>
                                 <connections>
                                     <action selector="ChooseBS:" destination="1TA-DW-0f9" eventType="touchUpInside" id="cnA-G2-qhT"/>
                                 </connections>
@@ -140,7 +140,7 @@
         <!--Blind Spot View Controller-->
         <scene sceneID="xpf-ON-xPZ">
             <objects>
-                <viewController storyboardIdentifier="BSViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dpy-wF-lnF" customClass="BlindSpotViewController" customModule="BS66" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BSViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dpy-wF-lnF" customClass="BlindSpotViewController" customModule="BS70" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0NB-pU-Jqq">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

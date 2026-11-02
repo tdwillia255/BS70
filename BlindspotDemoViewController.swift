@@ -15,42 +15,45 @@ class BlindspotDemoViewController: UIViewController {
     @IBOutlet weak var ShowBS: UIImageView!
     
     @IBOutlet weak var ChooseBS: UIButton!
-   
     
-   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-     print ("pressCount",pressCount)
+        print ("pressCount",pressCount)
     }
     
     @IBAction func ChooseBS(_ sender: Any) {
-    
-    
-     
-    print ("today")
- print (pressCount)
-       
-   
         
-   
+        
+        
+        print ("today")
+        print (pressCount)
+        
+        
+        
+        
         pressCount += 1
         if pressCount == 1 {
             print ("here we are")
             ShowBS.image=(UIImage(named: "Figure 25.jpg"))
         }
         if pressCount == 2 {
-            ShowBS.image=(UIImage(named: "Screenshot (194)"))
+            ShowBS.image=(UIImage(named: "Screenshot (201)"))
         }
         if pressCount == 3 {
-            ShowBS.image=(UIImage(named: "Screenshot (195)"))
+            ShowBS.image=(UIImage(named: "Screenshot (200)"))
         }
         if pressCount == 4 {
             ShowBS.image=(UIImage(named: "Screenshot (196)"))
         }
-        if pressCount >= 4 {
-            pressCount = 0
-            return
+        if pressCount == 5 {
+            ShowBS.image=(UIImage(named: "Screenshot (197)"))
+            if pressCount >= 5 {
+                pressCount = 0
+                return
+            }
         }
+        
     }
-
 }
